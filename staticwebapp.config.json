@@ -4,6 +4,10 @@
     "exclude": ["/assets/*", "/*.{png,jpg,jpeg,gif,svg,ico,webp,mp4,pdf,webm}"]
   },
   "mimeTypes": {
+    ".js": "application/javascript",
+    ".mjs": "application/javascript",
+    ".css": "text/css",
+    ".svg": "image/svg+xml",
     ".pdf": "application/pdf"
   }
 }
