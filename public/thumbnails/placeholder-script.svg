@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100" preserveAspectRatio="xMidYMid slice">
+  <rect width="850" height="1100" fill="#f4f1ea"/>
+  <g stroke="#c9c2b3" stroke-width="2">
+    <line x1="140" y1="200" x2="710" y2="200"/>
+    <line x1="140" y1="260" x2="620" y2="260"/>
+    <line x1="140" y1="320" x2="680" y2="320"/>
+    <line x1="140" y1="380" x2="590" y2="380"/>
+    <line x1="140" y1="440" x2="700" y2="440"/>
+    <line x1="140" y1="500" x2="560" y2="500"/>
+    <line x1="140" y1="560" x2="640" y2="560"/>
+    <line x1="140" y1="620" x2="600" y2="620"/>
+  </g>
+  <text x="425" y="140" font-family="Georgia, serif" font-size="42" fill="#111111" text-anchor="middle">SCRIPT</text>
+</svg>

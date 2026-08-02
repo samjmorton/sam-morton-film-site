@@ -1,0 +1,150 @@
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.crumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crumbLink {
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.crumbLink:hover {
+  color: var(--fg);
+  border-bottom-color: var(--line);
+}
+
+.crumbCurrent {
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.sep {
+  color: var(--line);
+  padding: 0 0.25rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 160px 90px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  color: inherit;
+  transition: background var(--transition);
+  width: 100%;
+}
+
+button.row {
+  cursor: pointer;
+}
+
+button.row:hover {
+  background: #f7f5f0;
+}
+
+.head {
+  padding: 0.6rem 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+}
+
+.head:hover {
+  background: transparent;
+}
+
+.cellName {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.icon {
+  flex: 0 0 auto;
+  color: var(--muted);
+}
+
+button.row:hover .icon {
+  color: var(--fg);
+}
+
+.nameText {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ext {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 0.35rem;
+  letter-spacing: 0.05em;
+}
+
+.cellRole,
+.cellYear {
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.cellYear {
+  text-align: right;
+  padding-right: 0.25rem;
+}
+
+.empty {
+  color: var(--muted);
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem 1rem;
+  }
+
+  .cellRole {
+    display: none;
+  }
+
+  .cellYear {
+    grid-column: 2;
+    text-align: right;
+  }
+
+  .head .cellYear::before {
+    content: "";
+  }
+}

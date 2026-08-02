@@ -1,0 +1,10 @@
+.main {
+  flex: 1 1 auto;
+  padding: 2.5rem 0 5rem;
+}
+
+@media (min-width: 720px) {
+  .main {
+    padding: 4rem 0 6rem;
+  }
+}

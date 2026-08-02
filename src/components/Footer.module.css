@@ -1,0 +1,40 @@
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 0;
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  letter-spacing: 0.05em;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 480px) {
+  .inner {
+    justify-content: center;
+    text-align: center;
+  }
+}

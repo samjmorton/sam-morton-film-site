@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <circle cx="400" cy="400" r="140" fill="#2a2a2a"/>
+  <path d="M180,900 Q400,600 620,900 Z" fill="#2a2a2a"/>
+  <text x="400" y="960" font-family="Georgia, serif" font-size="20" fill="#666" text-anchor="middle" letter-spacing="4">HEADSHOT</text>
+</svg>
